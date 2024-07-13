@@ -1,0 +1,746 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3848A8BC2C42ABD600753B47 /* SatsumaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3848A8BB2C42ABD600753B47 /* SatsumaApp.swift */; };
+		3848A8BE2C42ABD600753B47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3848A8BD2C42ABD600753B47 /* ContentView.swift */; };
+		3848A8C02C42ABD700753B47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3848A8BF2C42ABD700753B47 /* Assets.xcassets */; };
+		3848A8C32C42ABD700753B47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3848A8C22C42ABD700753B47 /* Preview Assets.xcassets */; };
+		386F58902C42B94600C62EBE /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F588F2C42B94600C62EBE /* FileManager.swift */; };
+		386F58932C42BAC800C62EBE /* SudachiGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F58922C42BAC000C62EBE /* SudachiGame.swift */; };
+		386F58982C42BBD900C62EBE /* GameButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F58972C42BBD500C62EBE /* GameButtonView.swift */; };
+		386F589A2C42BC2B00C62EBE /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F58992C42BC2B00C62EBE /* LibraryView.swift */; };
+		386F589D2C42C0E200C62EBE /* GameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F589C2C42C0DD00C62EBE /* GameListView.swift */; };
+		386F58A12C42CF7100C62EBE /* SudachiEmuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386F58A02C42CF6E00C62EBE /* SudachiEmuView.swift */; };
+		387F71AE2C42B44C000F9E4E /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F71AD2C42B44C000F9E4E /* CoreBluetooth.framework */; };
+		387F71B02C42B465000F9E4E /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 387F71AF2C42B465000F9E4E /* GameController.framework */; };
+		387F71B32C42B486000F9E4E /* libavcodec.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08C2C42B3EF0053C475 /* libavcodec.xcframework */; };
+		387F71B42C42B486000F9E4E /* libavcodec.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08C2C42B3EF0053C475 /* libavcodec.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71B62C42B487000F9E4E /* libavfilter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08D2C42B3EF0053C475 /* libavfilter.xcframework */; };
+		387F71B72C42B487000F9E4E /* libavfilter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08D2C42B3EF0053C475 /* libavfilter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71B82C42B488000F9E4E /* libavformat.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08E2C42B3EF0053C475 /* libavformat.xcframework */; };
+		387F71B92C42B488000F9E4E /* libavformat.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08E2C42B3EF0053C475 /* libavformat.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71BA2C42B48E000F9E4E /* libavutil.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08F2C42B3EF0053C475 /* libavutil.xcframework */; };
+		387F71BB2C42B48E000F9E4E /* libavutil.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08F2C42B3EF0053C475 /* libavutil.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71BC2C42B49D000F9E4E /* libswresample.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A12C42B3EF0053C475 /* libswresample.xcframework */; };
+		387F71BD2C42B49D000F9E4E /* libswresample.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A12C42B3EF0053C475 /* libswresample.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71BE2C42B4AE000F9E4E /* libswscale.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A22C42B3EF0053C475 /* libswscale.xcframework */; };
+		387F71BF2C42B4AE000F9E4E /* libswscale.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A22C42B3EF0053C475 /* libswscale.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71C02C42B4B2000F9E4E /* MoltenVK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A42C42B3EF0053C475 /* MoltenVK.xcframework */; };
+		387F71C12C42B4B2000F9E4E /* MoltenVK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A42C42B3EF0053C475 /* MoltenVK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		387F71C42C42B4D2000F9E4E /* SDL in Frameworks */ = {isa = PBXBuildFile; productRef = 387F71C32C42B4D2000F9E4E /* SDL */; };
+		387F71C72C42B4DD000F9E4E /* OpenSSL in Frameworks */ = {isa = PBXBuildFile; productRef = 387F71C62C42B4DD000F9E4E /* OpenSSL */; };
+		387F71CA2C42B500000F9E4E /* SwiftSyntax in Frameworks */ = {isa = PBXBuildFile; productRef = 387F71C92C42B500000F9E4E /* SwiftSyntax */; };
+		387F71CC2C42B500000F9E4E /* SwiftSyntaxMacros in Frameworks */ = {isa = PBXBuildFile; productRef = 387F71CB2C42B500000F9E4E /* SwiftSyntaxMacros */; };
+		38B4C0AA2C42B3EF0053C475 /* boost_context.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0882C42B3EF0053C475 /* boost_context.xcframework */; };
+		38B4C0AB2C42B3EF0053C475 /* libdynarmic.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0912C42B3EF0053C475 /* libdynarmic.xcframework */; };
+		38B4C0AC2C42B3EF0053C475 /* libmbedx509.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C09A2C42B3EF0053C475 /* libmbedx509.xcframework */; };
+		38B4C0AD2C42B3EF0053C475 /* libenet.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0922C42B3EF0053C475 /* libenet.xcframework */; };
+		38B4C0AE2C42B3EF0053C475 /* libfaad.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0932C42B3EF0053C475 /* libfaad.xcframework */; };
+		38B4C0AF2C42B3EF0053C475 /* libMachineIndependent.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0972C42B3EF0053C475 /* libMachineIndependent.xcframework */; };
+		38B4C0B32C42B3EF0053C475 /* libGenericCodeGen.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0952C42B3EF0053C475 /* libGenericCodeGen.xcframework */; };
+		38B4C0B42C42B3EF0053C475 /* libOpenAL.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C09C2C42B3EF0053C475 /* libOpenAL.xcframework */; };
+		38B4C0B52C42B3EF0053C475 /* libteakra.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A32C42B3EF0053C475 /* libteakra.xcframework */; };
+		38B4C0B62C42B3EF0053C475 /* libcryptopp.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0902C42B3EF0053C475 /* libcryptopp.xcframework */; };
+		38B4C0B72C42B3EF0053C475 /* libsirit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C09E2C42B3EF0053C475 /* libsirit.xcframework */; };
+		38B4C0BA2C42B3EF0053C475 /* libopus.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C09D2C42B3EF0053C475 /* libopus.xcframework */; };
+		38B4C0BB2C42B3EF0053C475 /* libSPIRV.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0A02C42B3EF0053C475 /* libSPIRV.xcframework */; };
+		38B4C0BC2C42B3EF0053C475 /* libmbedtls.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0992C42B3EF0053C475 /* libmbedtls.xcframework */; };
+		38B4C0BD2C42B3EF0053C475 /* libglslang.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0962C42B3EF0053C475 /* libglslang.xcframework */; };
+		38B4C0BE2C42B3EF0053C475 /* libmcl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C09B2C42B3EF0053C475 /* libmcl.xcframework */; };
+		38B4C0BF2C42B3EF0053C475 /* boost_iostreams.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0892C42B3EF0053C475 /* boost_iostreams.xcframework */; };
+		38B4C0C02C42B3EF0053C475 /* libmbedcrypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0982C42B3EF0053C475 /* libmbedcrypto.xcframework */; };
+		38B4C0C12C42B3EF0053C475 /* boost_serialization.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08B2C42B3EF0053C475 /* boost_serialization.xcframework */; };
+		38B4C0C22C42B3EF0053C475 /* libSoundTouch.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C09F2C42B3EF0053C475 /* libSoundTouch.xcframework */; };
+		38B4C0C42C42B3EF0053C475 /* libfmt.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C0942C42B3EF0053C475 /* libfmt.xcframework */; };
+		38B4C0C52C42B3EF0053C475 /* boost_program_options.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B4C08A2C42B3EF0053C475 /* boost_program_options.xcframework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		386F6ED32C42D96700C62EBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 386F6ECF2C42D96700C62EBE /* Sudachi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E63583612B95822D00D35422;
+			remoteInfo = Sudachi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		387F71B52C42B486000F9E4E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				387F71C12C42B4B2000F9E4E /* MoltenVK.xcframework in Embed Frameworks */,
+				387F71BB2C42B48E000F9E4E /* libavutil.xcframework in Embed Frameworks */,
+				387F71BD2C42B49D000F9E4E /* libswresample.xcframework in Embed Frameworks */,
+				387F71B72C42B487000F9E4E /* libavfilter.xcframework in Embed Frameworks */,
+				387F71B92C42B488000F9E4E /* libavformat.xcframework in Embed Frameworks */,
+				387F71BF2C42B4AE000F9E4E /* libswscale.xcframework in Embed Frameworks */,
+				387F71B42C42B486000F9E4E /* libavcodec.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3848A8B82C42ABD500753B47 /* Satsuma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Satsuma.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3848A8BB2C42ABD600753B47 /* SatsumaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SatsumaApp.swift; sourceTree = "<group>"; };
+		3848A8BD2C42ABD600753B47 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3848A8BF2C42ABD700753B47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3848A8C22C42ABD700753B47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		386F588F2C42B94600C62EBE /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		386F58922C42BAC000C62EBE /* SudachiGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudachiGame.swift; sourceTree = "<group>"; };
+		386F58972C42BBD500C62EBE /* GameButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameButtonView.swift; sourceTree = "<group>"; };
+		386F58992C42BC2B00C62EBE /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		386F589C2C42C0DD00C62EBE /* GameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameListView.swift; sourceTree = "<group>"; };
+		386F589E2C42C74F00C62EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		386F58A02C42CF6E00C62EBE /* SudachiEmuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SudachiEmuView.swift; sourceTree = "<group>"; };
+		386F58A22C42D23C00C62EBE /* Satsuma.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Satsuma.entitlements; sourceTree = "<group>"; };
+		386F6ECF2C42D96700C62EBE /* Sudachi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Sudachi.xcodeproj; path = Sudachi/Sudachi.xcodeproj; sourceTree = "<group>"; };
+		387F71AD2C42B44C000F9E4E /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		387F71AF2C42B465000F9E4E /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		38B4C0882C42B3EF0053C475 /* boost_context.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = boost_context.xcframework; sourceTree = "<group>"; };
+		38B4C0892C42B3EF0053C475 /* boost_iostreams.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = boost_iostreams.xcframework; sourceTree = "<group>"; };
+		38B4C08A2C42B3EF0053C475 /* boost_program_options.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = boost_program_options.xcframework; sourceTree = "<group>"; };
+		38B4C08B2C42B3EF0053C475 /* boost_serialization.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = boost_serialization.xcframework; sourceTree = "<group>"; };
+		38B4C08C2C42B3EF0053C475 /* libavcodec.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavcodec.xcframework; sourceTree = "<group>"; };
+		38B4C08D2C42B3EF0053C475 /* libavfilter.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavfilter.xcframework; sourceTree = "<group>"; };
+		38B4C08E2C42B3EF0053C475 /* libavformat.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavformat.xcframework; sourceTree = "<group>"; };
+		38B4C08F2C42B3EF0053C475 /* libavutil.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libavutil.xcframework; sourceTree = "<group>"; };
+		38B4C0902C42B3EF0053C475 /* libcryptopp.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libcryptopp.xcframework; sourceTree = "<group>"; };
+		38B4C0912C42B3EF0053C475 /* libdynarmic.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libdynarmic.xcframework; sourceTree = "<group>"; };
+		38B4C0922C42B3EF0053C475 /* libenet.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libenet.xcframework; sourceTree = "<group>"; };
+		38B4C0932C42B3EF0053C475 /* libfaad.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libfaad.xcframework; sourceTree = "<group>"; };
+		38B4C0942C42B3EF0053C475 /* libfmt.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libfmt.xcframework; sourceTree = "<group>"; };
+		38B4C0952C42B3EF0053C475 /* libGenericCodeGen.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libGenericCodeGen.xcframework; sourceTree = "<group>"; };
+		38B4C0962C42B3EF0053C475 /* libglslang.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libglslang.xcframework; sourceTree = "<group>"; };
+		38B4C0972C42B3EF0053C475 /* libMachineIndependent.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libMachineIndependent.xcframework; sourceTree = "<group>"; };
+		38B4C0982C42B3EF0053C475 /* libmbedcrypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libmbedcrypto.xcframework; sourceTree = "<group>"; };
+		38B4C0992C42B3EF0053C475 /* libmbedtls.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libmbedtls.xcframework; sourceTree = "<group>"; };
+		38B4C09A2C42B3EF0053C475 /* libmbedx509.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libmbedx509.xcframework; sourceTree = "<group>"; };
+		38B4C09B2C42B3EF0053C475 /* libmcl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libmcl.xcframework; sourceTree = "<group>"; };
+		38B4C09C2C42B3EF0053C475 /* libOpenAL.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libOpenAL.xcframework; sourceTree = "<group>"; };
+		38B4C09D2C42B3EF0053C475 /* libopus.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libopus.xcframework; sourceTree = "<group>"; };
+		38B4C09E2C42B3EF0053C475 /* libsirit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libsirit.xcframework; sourceTree = "<group>"; };
+		38B4C09F2C42B3EF0053C475 /* libSoundTouch.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libSoundTouch.xcframework; sourceTree = "<group>"; };
+		38B4C0A02C42B3EF0053C475 /* libSPIRV.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libSPIRV.xcframework; sourceTree = "<group>"; };
+		38B4C0A12C42B3EF0053C475 /* libswresample.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libswresample.xcframework; sourceTree = "<group>"; };
+		38B4C0A22C42B3EF0053C475 /* libswscale.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libswscale.xcframework; sourceTree = "<group>"; };
+		38B4C0A32C42B3EF0053C475 /* libteakra.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = libteakra.xcframework; sourceTree = "<group>"; };
+		38B4C0A42C42B3EF0053C475 /* MoltenVK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MoltenVK.xcframework; sourceTree = "<group>"; };
+		38B4C0A52C42B3EF0053C475 /* MoltenVK-backup.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = "MoltenVK-backup.xcframework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3848A8B52C42ABD500753B47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				387F71C02C42B4B2000F9E4E /* MoltenVK.xcframework in Frameworks */,
+				387F71B62C42B487000F9E4E /* libavfilter.xcframework in Frameworks */,
+				387F71BE2C42B4AE000F9E4E /* libswscale.xcframework in Frameworks */,
+				387F71CC2C42B500000F9E4E /* SwiftSyntaxMacros in Frameworks */,
+				38B4C0AA2C42B3EF0053C475 /* boost_context.xcframework in Frameworks */,
+				38B4C0AB2C42B3EF0053C475 /* libdynarmic.xcframework in Frameworks */,
+				387F71B82C42B488000F9E4E /* libavformat.xcframework in Frameworks */,
+				38B4C0AC2C42B3EF0053C475 /* libmbedx509.xcframework in Frameworks */,
+				387F71AE2C42B44C000F9E4E /* CoreBluetooth.framework in Frameworks */,
+				38B4C0AD2C42B3EF0053C475 /* libenet.xcframework in Frameworks */,
+				38B4C0AE2C42B3EF0053C475 /* libfaad.xcframework in Frameworks */,
+				38B4C0AF2C42B3EF0053C475 /* libMachineIndependent.xcframework in Frameworks */,
+				387F71BC2C42B49D000F9E4E /* libswresample.xcframework in Frameworks */,
+				38B4C0B32C42B3EF0053C475 /* libGenericCodeGen.xcframework in Frameworks */,
+				38B4C0B42C42B3EF0053C475 /* libOpenAL.xcframework in Frameworks */,
+				38B4C0B52C42B3EF0053C475 /* libteakra.xcframework in Frameworks */,
+				387F71C72C42B4DD000F9E4E /* OpenSSL in Frameworks */,
+				38B4C0B62C42B3EF0053C475 /* libcryptopp.xcframework in Frameworks */,
+				38B4C0B72C42B3EF0053C475 /* libsirit.xcframework in Frameworks */,
+				387F71B02C42B465000F9E4E /* GameController.framework in Frameworks */,
+				38B4C0BA2C42B3EF0053C475 /* libopus.xcframework in Frameworks */,
+				38B4C0BB2C42B3EF0053C475 /* libSPIRV.xcframework in Frameworks */,
+				387F71CA2C42B500000F9E4E /* SwiftSyntax in Frameworks */,
+				38B4C0BC2C42B3EF0053C475 /* libmbedtls.xcframework in Frameworks */,
+				38B4C0BD2C42B3EF0053C475 /* libglslang.xcframework in Frameworks */,
+				387F71C42C42B4D2000F9E4E /* SDL in Frameworks */,
+				38B4C0BE2C42B3EF0053C475 /* libmcl.xcframework in Frameworks */,
+				38B4C0BF2C42B3EF0053C475 /* boost_iostreams.xcframework in Frameworks */,
+				387F71BA2C42B48E000F9E4E /* libavutil.xcframework in Frameworks */,
+				387F71B32C42B486000F9E4E /* libavcodec.xcframework in Frameworks */,
+				38B4C0C02C42B3EF0053C475 /* libmbedcrypto.xcframework in Frameworks */,
+				38B4C0C12C42B3EF0053C475 /* boost_serialization.xcframework in Frameworks */,
+				38B4C0C22C42B3EF0053C475 /* libSoundTouch.xcframework in Frameworks */,
+				38B4C0C42C42B3EF0053C475 /* libfmt.xcframework in Frameworks */,
+				38B4C0C52C42B3EF0053C475 /* boost_program_options.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3848A8AF2C42ABD500753B47 = {
+			isa = PBXGroup;
+			children = (
+				386F6ECF2C42D96700C62EBE /* Sudachi.xcodeproj */,
+				3848A8BA2C42ABD500753B47 /* Satsuma */,
+				3848A8B92C42ABD500753B47 /* Products */,
+				387F71AC2C42B44C000F9E4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3848A8B92C42ABD500753B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3848A8B82C42ABD500753B47 /* Satsuma.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3848A8BA2C42ABD500753B47 /* Satsuma */ = {
+			isa = PBXGroup;
+			children = (
+				386F58A22C42D23C00C62EBE /* Satsuma.entitlements */,
+				386F589E2C42C74F00C62EBE /* Info.plist */,
+				386F589F2C42CF6000C62EBE /* EmulationView */,
+				386F58942C42BB4C00C62EBE /* LibraryViews */,
+				386F58912C42BAB700C62EBE /* GameManager */,
+				386F588E2C42B92D00C62EBE /* FilesManager */,
+				3848A8BB2C42ABD600753B47 /* SatsumaApp.swift */,
+				3848A8BD2C42ABD600753B47 /* ContentView.swift */,
+				3848A8BF2C42ABD700753B47 /* Assets.xcassets */,
+				38B4C0A72C42B3EF0053C475 /* Dependencies */,
+				3848A8C12C42ABD700753B47 /* Preview Content */,
+			);
+			path = Satsuma;
+			sourceTree = "<group>";
+		};
+		3848A8C12C42ABD700753B47 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3848A8C22C42ABD700753B47 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		386F588E2C42B92D00C62EBE /* FilesManager */ = {
+			isa = PBXGroup;
+			children = (
+				386F588F2C42B94600C62EBE /* FileManager.swift */,
+			);
+			path = FilesManager;
+			sourceTree = "<group>";
+		};
+		386F58912C42BAB700C62EBE /* GameManager */ = {
+			isa = PBXGroup;
+			children = (
+				386F58922C42BAC000C62EBE /* SudachiGame.swift */,
+			);
+			path = GameManager;
+			sourceTree = "<group>";
+		};
+		386F58942C42BB4C00C62EBE /* LibraryViews */ = {
+			isa = PBXGroup;
+			children = (
+				386F589B2C42C0D200C62EBE /* GameList */,
+				386F58962C42BBA000C62EBE /* GameButton */,
+				386F58992C42BC2B00C62EBE /* LibraryView.swift */,
+			);
+			path = LibraryViews;
+			sourceTree = "<group>";
+		};
+		386F58962C42BBA000C62EBE /* GameButton */ = {
+			isa = PBXGroup;
+			children = (
+				386F58972C42BBD500C62EBE /* GameButtonView.swift */,
+			);
+			path = GameButton;
+			sourceTree = "<group>";
+		};
+		386F589B2C42C0D200C62EBE /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				386F589C2C42C0DD00C62EBE /* GameListView.swift */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+		386F589F2C42CF6000C62EBE /* EmulationView */ = {
+			isa = PBXGroup;
+			children = (
+				386F58A02C42CF6E00C62EBE /* SudachiEmuView.swift */,
+			);
+			path = EmulationView;
+			sourceTree = "<group>";
+		};
+		386F6ED02C42D96700C62EBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				386F6ED42C42D96700C62EBE /* libSudachi.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		387F71AC2C42B44C000F9E4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				387F71AF2C42B465000F9E4E /* GameController.framework */,
+				387F71AD2C42B44C000F9E4E /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38B4C0A62C42B3EF0053C475 /* XCFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B4C0882C42B3EF0053C475 /* boost_context.xcframework */,
+				38B4C0892C42B3EF0053C475 /* boost_iostreams.xcframework */,
+				38B4C08A2C42B3EF0053C475 /* boost_program_options.xcframework */,
+				38B4C08B2C42B3EF0053C475 /* boost_serialization.xcframework */,
+				38B4C08C2C42B3EF0053C475 /* libavcodec.xcframework */,
+				38B4C08D2C42B3EF0053C475 /* libavfilter.xcframework */,
+				38B4C08E2C42B3EF0053C475 /* libavformat.xcframework */,
+				38B4C08F2C42B3EF0053C475 /* libavutil.xcframework */,
+				38B4C0902C42B3EF0053C475 /* libcryptopp.xcframework */,
+				38B4C0912C42B3EF0053C475 /* libdynarmic.xcframework */,
+				38B4C0922C42B3EF0053C475 /* libenet.xcframework */,
+				38B4C0932C42B3EF0053C475 /* libfaad.xcframework */,
+				38B4C0942C42B3EF0053C475 /* libfmt.xcframework */,
+				38B4C0952C42B3EF0053C475 /* libGenericCodeGen.xcframework */,
+				38B4C0962C42B3EF0053C475 /* libglslang.xcframework */,
+				38B4C0972C42B3EF0053C475 /* libMachineIndependent.xcframework */,
+				38B4C0982C42B3EF0053C475 /* libmbedcrypto.xcframework */,
+				38B4C0992C42B3EF0053C475 /* libmbedtls.xcframework */,
+				38B4C09A2C42B3EF0053C475 /* libmbedx509.xcframework */,
+				38B4C09B2C42B3EF0053C475 /* libmcl.xcframework */,
+				38B4C09C2C42B3EF0053C475 /* libOpenAL.xcframework */,
+				38B4C09D2C42B3EF0053C475 /* libopus.xcframework */,
+				38B4C09E2C42B3EF0053C475 /* libsirit.xcframework */,
+				38B4C09F2C42B3EF0053C475 /* libSoundTouch.xcframework */,
+				38B4C0A02C42B3EF0053C475 /* libSPIRV.xcframework */,
+				38B4C0A12C42B3EF0053C475 /* libswresample.xcframework */,
+				38B4C0A22C42B3EF0053C475 /* libswscale.xcframework */,
+				38B4C0A32C42B3EF0053C475 /* libteakra.xcframework */,
+				38B4C0A42C42B3EF0053C475 /* MoltenVK.xcframework */,
+				38B4C0A52C42B3EF0053C475 /* MoltenVK-backup.xcframework */,
+			);
+			path = XCFrameworks;
+			sourceTree = "<group>";
+		};
+		38B4C0A72C42B3EF0053C475 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				38B4C0A62C42B3EF0053C475 /* XCFrameworks */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3848A8B72C42ABD500753B47 /* Satsuma */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3848A8C62C42ABD700753B47 /* Build configuration list for PBXNativeTarget "Satsuma" */;
+			buildPhases = (
+				3848A8B42C42ABD500753B47 /* Sources */,
+				3848A8B52C42ABD500753B47 /* Frameworks */,
+				3848A8B62C42ABD500753B47 /* Resources */,
+				387F71B52C42B486000F9E4E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Satsuma;
+			packageProductDependencies = (
+				387F71C32C42B4D2000F9E4E /* SDL */,
+				387F71C62C42B4DD000F9E4E /* OpenSSL */,
+				387F71C92C42B500000F9E4E /* SwiftSyntax */,
+				387F71CB2C42B500000F9E4E /* SwiftSyntaxMacros */,
+			);
+			productName = Satsuma;
+			productReference = 3848A8B82C42ABD500753B47 /* Satsuma.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3848A8B02C42ABD500753B47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					3848A8B72C42ABD500753B47 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 3848A8B32C42ABD500753B47 /* Build configuration list for PBXProject "Satsuma" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3848A8AF2C42ABD500753B47;
+			packageReferences = (
+				387F71C22C42B4D2000F9E4E /* XCRemoteSwiftPackageReference "SwiftSDL2" */,
+				387F71C52C42B4DD000F9E4E /* XCRemoteSwiftPackageReference "OpenSSL" */,
+				387F71C82C42B500000F9E4E /* XCRemoteSwiftPackageReference "swift-syntax" */,
+			);
+			productRefGroup = 3848A8B92C42ABD500753B47 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 386F6ED02C42D96700C62EBE /* Products */;
+					ProjectRef = 386F6ECF2C42D96700C62EBE /* Sudachi.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3848A8B72C42ABD500753B47 /* Satsuma */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		386F6ED42C42D96700C62EBE /* libSudachi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSudachi.a;
+			remoteRef = 386F6ED32C42D96700C62EBE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3848A8B62C42ABD500753B47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3848A8C32C42ABD700753B47 /* Preview Assets.xcassets in Resources */,
+				3848A8C02C42ABD700753B47 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3848A8B42C42ABD500753B47 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				386F58902C42B94600C62EBE /* FileManager.swift in Sources */,
+				3848A8BE2C42ABD600753B47 /* ContentView.swift in Sources */,
+				386F58A12C42CF7100C62EBE /* SudachiEmuView.swift in Sources */,
+				386F589D2C42C0E200C62EBE /* GameListView.swift in Sources */,
+				3848A8BC2C42ABD600753B47 /* SatsumaApp.swift in Sources */,
+				386F58932C42BAC800C62EBE /* SudachiGame.swift in Sources */,
+				386F589A2C42BC2B00C62EBE /* LibraryView.swift in Sources */,
+				386F58982C42BBD900C62EBE /* GameButtonView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3848A8C42C42ABD700753B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3848A8C52C42ABD700753B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3848A8C72C42ABD700753B47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Satsuma/Satsuma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Satsuma/Preview Content\"";
+				DEVELOPMENT_TEAM = 95J8WZ4TN8;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Satsuma/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Satsuma/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Satsuma needs local network access for P2P Multiplayer";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Satsuma/Dependencies/Dynamic\\\\\\\\ Libraries\"",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lSudachi";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.satsuma-emu.Satsuma";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3848A8C82C42ABD700753B47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Satsuma/Satsuma.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Satsuma/Preview Content\"";
+				DEVELOPMENT_TEAM = 95J8WZ4TN8;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Satsuma/Frameworks",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Satsuma/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Satsuma needs local network access for P2P Multiplayer";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Satsuma/Dependencies/Dynamic\\\\\\\\ Libraries\"",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lSudachi";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.satsuma-emu.Satsuma";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3848A8B32C42ABD500753B47 /* Build configuration list for PBXProject "Satsuma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3848A8C42C42ABD700753B47 /* Debug */,
+				3848A8C52C42ABD700753B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3848A8C62C42ABD700753B47 /* Build configuration list for PBXNativeTarget "Satsuma" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3848A8C72C42ABD700753B47 /* Debug */,
+				3848A8C82C42ABD700753B47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		387F71C22C42B4D2000F9E4E /* XCRemoteSwiftPackageReference "SwiftSDL2" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ctreffs/SwiftSDL2";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+		387F71C52C42B4DD000F9E4E /* XCRemoteSwiftPackageReference "OpenSSL" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/OpenSSL";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.5007;
+			};
+		};
+		387F71C82C42B500000F9E4E /* XCRemoteSwiftPackageReference "swift-syntax" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-syntax.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 510.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		387F71C32C42B4D2000F9E4E /* SDL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 387F71C22C42B4D2000F9E4E /* XCRemoteSwiftPackageReference "SwiftSDL2" */;
+			productName = SDL;
+		};
+		387F71C62C42B4DD000F9E4E /* OpenSSL */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 387F71C52C42B4DD000F9E4E /* XCRemoteSwiftPackageReference "OpenSSL" */;
+			productName = OpenSSL;
+		};
+		387F71C92C42B500000F9E4E /* SwiftSyntax */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 387F71C82C42B500000F9E4E /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntax;
+		};
+		387F71CB2C42B500000F9E4E /* SwiftSyntaxMacros */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 387F71C82C42B500000F9E4E /* XCRemoteSwiftPackageReference "swift-syntax" */;
+			productName = SwiftSyntaxMacros;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3848A8B02C42ABD500753B47 /* Project object */;
+}
